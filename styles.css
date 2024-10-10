@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.segment {
+    margin-bottom: 20px;
+}
+
+#output-section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center; /* Center-align the output section */
+}
+
+#selected-image, #selected-title, #selected-text {
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 20px;
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+/* Ensure radio buttons appear on separate lines */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+

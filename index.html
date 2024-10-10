@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Ad Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 1st Section: Template Selection -->
+        <div class="section" id="template-section">
+            <h2>Select a Template</h2>
+            <label><input type="radio" name="template" value="template1"> Template 1</label>
+            <label><input type="radio" name="template" value="template2"> Template 2</label>
+            <label><input type="radio" name="template" value="template3"> Template 3</label>
+            <label><input type="radio" name="template" value="template4"> Template 4</label>
+            <label><input type="radio" name="template" value="template5"> Template 5</label>
+        </div>
+
+        <!-- 2nd Section: Segment Selection -->
+        <div class="section" id="segment-section">
+            <h2>Select Content for Segments</h2>
+
+            <div class="segment" id="segment1">
+                <h3>Segment 1</h3>
+                <img src="roses.png" alt="Product 1" width="100">
+                <label><input type="radio" name="image" value="image1"> Select Image</label>
+                <label><input type="radio" name="title" value="50% OFF on Shoes"> Select Title: 50% OFF on Shoes</label>
+                <label><input type="radio" name="text" value="Limited time offer, shop now!"> Select Text: Limited time offer, shop now!</label>
+                <hr>
+            </div>
+
+            <div class="segment" id="segment2">
+                <h3>Segment 2</h3>
+                <img src="pinkflower.png" alt="Product 2" width="100">
+                <label><input type="radio" name="image" value="image2"> Select Image</label>
+                <label><input type="radio" name="title" value="Buy One Get One FREE"> Select Title: Buy One Get One FREE</label>
+                <label><input type="radio" name="text" value="Grab your deal before it's gone!"> Select Text: Grab your deal before it's gone!</label>
+                <hr>
+            </div>
+
+            <div class="segment" id="segment3">
+                <h3>Segment 3</h3>
+                <img src="lotus.png" alt="Product 3" width="100">
+                <label><input type="radio" name="image" value="image3"> Select Image</label>
+                <label><input type="radio" name="title" value="New Collection of Summer Wear"> Select Title: New Collection of Summer Wear</label>
+                <label><input type="radio" name="text" value="Stylish designs at unbeatable prices!"> Select Text: Stylish designs at unbeatable prices!</label>
+                <hr>
+            </div>
+        </div>
+
+        <!-- 3rd Section: Display Selected Content -->
+        <div class="section" id="output-section">
+            <h2>Selected Content</h2>
+            <div id="template-output"></div>
+            <!-- This is where the placeholders will be replaced -->
+            <div id="rendered-content">
+                <img src="[Image Placeholder]" alt="Placeholder Image" style="width: 100px; height: 100px;">                
+                <h3>[Title Placeholder]</h3>
+                <p>[Text Placeholder]</p>
+            </div>
+            <button onclick="downloadHtml()">Download as HTML</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
